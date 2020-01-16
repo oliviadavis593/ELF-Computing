@@ -4,15 +4,25 @@ import './Summary.css';
 class Summary extends Component {
 
     render() {
+        const summary = Object.keys(this.state.selected).map((feature, idx) => {
+            const featureHash = feature + '-' + idx;
+            const selectedOption = this.state.selected[feature];
+      
+            return (
+              <div className="summary__option" key={featureHash}>
+                <div className="summary__option__label">{feature} </div>
+                <div className="summary__option__value">{selectedOption.name}</div>
+                <div className="summary__option__cost">
+                  
+                </div>
+              </div>
+            );
+          });
+
         return (
             <section className="main__summary">
                 <h2>Your cart</h2>
-                <div className="summary__total">
-                    <div className="summary__total__value">Total</div>
-                    <div className="summary__total__value">
-                        {/*USCurrencyFormay.format(total) */}
-                    </div>
-                </div>
+                {summary}
             </section>
         )
     }
