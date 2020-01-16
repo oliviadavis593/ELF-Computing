@@ -27,14 +27,5 @@
     text-align: right;
   }
   
-  
-  
-  .summary__total__label {
-    font-weight: bold;
-    flex: 2;
-  }
-  
-  .summary__total__value {
-    text-decoration: underline;
-  }
+
   

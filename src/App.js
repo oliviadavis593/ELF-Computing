@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Summary from './Summary/Summary'
+import Summary from './Summary/Summary';
+import Total from './Total/Total';
 import './App.css' 
 
 
@@ -47,6 +48,9 @@ class App extends Component {
             <h2>Customize your laptop</h2>
           </form>
           <Summary />
+          <div>
+            <Total />
+          </div>
         </main>
       </div>
     )
