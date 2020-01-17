@@ -47,7 +47,7 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            <Features />
+            <Features features={this.props.features}/>
           </form>
           <Summary />
           <div>
