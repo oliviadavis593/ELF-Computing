@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Summary from './Summary/Summary';
+import Features from './Features/Features'
 import Total from './Total/Total';
 import './App.css' 
 
@@ -46,6 +47,7 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
+            <Features />
           </form>
           <Summary />
           <div>
