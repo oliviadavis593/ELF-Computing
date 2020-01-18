@@ -10,7 +10,7 @@ class Options extends Component {
                 <h2>Customize your laptop</h2>
                 <Features 
                 features={this.props.features} 
-                selected={this.state.selected}
+                selected={this.props.selected}
                 updateFeature={this.props.updateFeature}
                 USCurrencyFormat={this.props.USCurrencyFormat}
                 />
