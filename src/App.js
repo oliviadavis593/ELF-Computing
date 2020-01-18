@@ -52,24 +52,23 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            <Features 
-            features={this.props.features} 
-            selected={this.state.selected}
-            updateFeature={this.updateFeature}
-            USCurrencyFormat={USCurrencyFormat}
+          <Features 
+              features={this.props.features} 
+              selected={this.state.selected}
+              updateFeature={this.updateFeature}
+              USCurrencyFormat={USCurrencyFormat}
             /> 
           </form>
           <Summary 
-          summary={this.props.summary}
-          selected={this.state.selected}
-          USCurrencyFormat={USCurrencyFormat}
+            summary={this.props.summary}
+            selected={this.state.selected}
+            USCurrencyFormat={USCurrencyFormat}
           />
           
-            <Total 
+          <Total 
             total={this.props.total}
             selected={this.state.selected}
             />
-          
         </main>
       </div>
     )

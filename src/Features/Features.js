@@ -43,5 +43,4 @@ class Features extends Component {
 }
 }
 
-export default Features; 
-
+export default Features;

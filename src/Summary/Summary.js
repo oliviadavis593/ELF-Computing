@@ -25,7 +25,7 @@ class Summary extends Component {
             <div className="summary__total">
               <div className="summary__total__label">Total</div>
               <div className="summary__total__value">
-                {/*USCurrencyFormat.format(total)*/}
+                {/*this.props.USCurrencyFormat.format(total)*/}
               </div>
             </div>
           </section>
@@ -35,7 +35,5 @@ class Summary extends Component {
 
 export default Summary; 
 
-/*
-TO DO: How to put in the {summary} & {USCurrencyFormat.format(total)}
-*/
+
 

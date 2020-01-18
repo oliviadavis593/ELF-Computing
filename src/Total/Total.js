@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 
 class Total extends Component {
     render() {
+        const total = Object.keys(this.props.selected).reduce(
+            (acc, curr) => acc + this.props.selected[curr].cost,
+            0
+          );
         return(
             <div className="summary__total">
                     <div className="summary__total__value">Total</div>
                     <div className="summary__total__value">
-                        {/*USCurrencyFormay.format(total) */}
+                        {/*this.props.USCurrencyFormat.format(total)*/} {/*Fix later */}
                     </div>
                 </div>
         )
