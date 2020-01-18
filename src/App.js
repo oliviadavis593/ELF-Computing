@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Summary from './Summary/Summary';
 import Features from './Features/Features'
+import Header from './Header/Header'
 import Total from './Total/Total';
 import './App.css' 
 
@@ -47,9 +48,7 @@ class App extends Component {
     console.log(this.USCurrencyFormat)
     return(
       <div className="App">
-        <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+        <Header />
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
@@ -57,6 +56,7 @@ class App extends Component {
             features={this.props.features} 
             selected={this.state.selected}
             updateFeature={this.updateFeature}
+            USCurrencyFormat={USCurrencyFormat}
             /> 
           </form>
           <Summary 
@@ -64,9 +64,12 @@ class App extends Component {
           selected={this.state.selected}
           USCurrencyFormat={USCurrencyFormat}
           />
-          <div>
-            <Total />
-          </div>
+          
+            <Total 
+            total={this.props.total}
+            selected={this.state.selected}
+            />
+          
         </main>
       </div>
     )
