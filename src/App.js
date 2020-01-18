@@ -65,6 +65,7 @@ class App extends Component {
           <Total 
             total={this.props.total}
             selected={this.state.selected}
+            USCurrencyFormat={USCurrencyFormat}
             />
         </main>
       </div>
