@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Summary from './Summary/Summary';
-import Features from './Features/Features'
 import Header from './Header/Header'
 import Total from './Total/Total';
+import Options from './Options/Options'
 import './App.css' 
 
 // This object will allow us to
@@ -50,15 +50,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <form className="main__form">
-            <h2>Customize your laptop</h2>
-          <Features 
-              features={this.props.features} 
-              selected={this.state.selected}
-              updateFeature={this.updateFeature}
-              USCurrencyFormat={USCurrencyFormat}
-            /> 
-          </form>
+          <Options 
+          
+          />
           <Summary 
             summary={this.props.summary}
             selected={this.state.selected}

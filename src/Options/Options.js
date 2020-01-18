@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import Features from '../Features/Features'
 import './Options.css';
 
 class Options extends Component {
 
     render() {
-        const options = this.props.features[feature].map(item => {
-            return(
-                <legend>
-                    {options}
-                </legend>
-            );
-        });
+        return(
+            <form className="main__form">
+                <h2>Customize your laptop</h2>
+                <Features />
+            </form>
+        )
     }
 }
 
