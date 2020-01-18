@@ -8,6 +8,7 @@ import './Features.css'
 class Features extends Component {
     
   render() {
+    console.log(this.props.features)
     return Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       const options = this.props.features[feature].map(item => {
@@ -19,11 +20,11 @@ class Features extends Component {
               id={itemHash}
               className="feature__option"
               name={slugify(feature)}
-              checked={item.name === this.state.selected[feature].name}
-              onChange={e => this.updateFeature(feature, item)}
+              checked={item.name === this.props.selected[feature].name}
+              onChange={e => this.props.updateFeature(feature, item)}
             />
             <label htmlFor={itemHash} className="feature__label">
-              {item.name} ({this.props.USCurrencyFormat.format(item.cost)})
+              {item.name} 
             </label>
           </div>
         );
