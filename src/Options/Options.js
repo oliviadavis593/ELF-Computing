@@ -8,10 +8,15 @@ class Options extends Component {
         return(
             <form className="main__form">
                 <h2>Customize your laptop</h2>
-                <Features />
+                <Features 
+                features={this.props.features} 
+                selected={this.state.selected}
+                updateFeature={this.props.updateFeature}
+                USCurrencyFormat={this.props.USCurrencyFormat}
+                />
             </form>
         )
     }
 }
 
-export default Options; 
+export default Options;  

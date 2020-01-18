@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Summary from './Summary/Summary';
 import Header from './Header/Header'
 import Total from './Total/Total';
-import Options from './Options/Options'
+import Options from './Options/Options';
 import './App.css' 
 
 // This object will allow us to
@@ -51,7 +51,10 @@ class App extends Component {
         <Header />
         <main>
           <Options 
-          
+          features={this.props.features} 
+          selected={this.state.selected}
+          updateFeature={this.updateFeature}
+          USCurrencyFormat={USCurrencyFormat}
           />
           <Summary 
             summary={this.props.summary}
