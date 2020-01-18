@@ -8,7 +8,6 @@ import './Features.css'
 class Features extends Component {
     
   render() {
-    console.log(this.props.features)
     return Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       const options = this.props.features[feature].map(item => {
