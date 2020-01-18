@@ -1,3 +1,7 @@
+.feature__item + .feature__item {
+  margin-top: 0.8rem;
+}
+
 /* Hide radios from sighted users,
 while keeping them available to the keyboard */
 .feature__option {
@@ -10,7 +14,7 @@ while keeping them available to the keyboard */
     width: 1px !important;
     overflow: hidden;
   }
-  
+
   .feature__label {
     display: block;
     padding: 0.8rem;
@@ -33,3 +37,24 @@ while keeping them available to the keyboard */
   .feature__option:not(:checked) + .feature__label {
     cursor: pointer;
   }
+
+
+  .feature {
+    padding: 0.8rem;
+    padding-top: 0.4rem;
+    border: 0;
+  }
+  
+  .feature + .feature {
+    margin-top: 0.8rem;
+  }
+
+  .feature__name {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: bold;
+  }
+
+  
+  
+  
