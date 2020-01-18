@@ -55,6 +55,9 @@ while keeping them available to the keyboard */
     font-weight: bold;
   }
 
+  legend > h3 {
+    margin: 0;
+  }
   
   
   
