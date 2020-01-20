@@ -44,7 +44,7 @@ class App extends Component {
 
 
   render() {
-    console.log(this.USCurrencyFormat)
+    
     return(
       <div className="App">
         <Header />
