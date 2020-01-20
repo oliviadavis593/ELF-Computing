@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Total from '../Total/Total';
+import Options from '../Options/Options'
 import './Summary.css';
 
 class Summary extends Component {
