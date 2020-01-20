@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Total from '../Total/Total';
 import './Summary.css';
 
 class Summary extends Component {
@@ -22,7 +23,11 @@ class Summary extends Component {
         <section className="main__summary">
             <h2>Your cart</h2>
             {summary}
-          
+            <Total 
+            total={this.props.total}
+            selected={this.props.selected}
+            USCurrencyFormat={this.props.USCurrencyFormat}
+            />
           </section>
       )
     }
