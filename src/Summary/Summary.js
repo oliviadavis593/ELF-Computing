@@ -34,6 +34,3 @@ class Summary extends Component {
 }
 
 export default Summary; 
-
-
-
