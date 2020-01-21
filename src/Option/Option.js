@@ -1,4 +1,5 @@
 import React from 'react';
+import './Option.css'
 
 export default props => {
   const { name, hash, cost, feature } = props;

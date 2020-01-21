@@ -26,12 +26,13 @@ class Summary extends Component {
     });
 
     return(
-      <div>
+      <section className="main__summary">
+        <h2>Your Cart</h2>
         {options}
         <Total 
         total={total}
         />
-      </div>
+      </section>
     )
   }
 }

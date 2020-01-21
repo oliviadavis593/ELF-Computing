@@ -1,4 +1,5 @@
 import React from 'react';
+import './Feature.css'
 
 export default props => {
   const { isChecked, hash, slug, itemName, itemCost, feature, item, updateFeature } = props;
